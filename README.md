@@ -40,12 +40,13 @@ For security reasons, was made the decision to store the authentication token in
   1. **JavaScript over TypeScript:** The choice of JavaScript over TypeScript was made due to the project's small and straightforward nature. TypeScript may be considered in the future, but initially, it seemed like an unnecessary overhead.
 
   2. **Bash Script Helper:** Instead of interprocess manipulation through JavaScript, a bash script was chosen as a helper for making changes. This decision was based on the simplicity of the current process, which doesn't require complex conditional execution or pattern changes. However, if a more granular approach becomes necessary, we can utilize JavaScript's `spawn` to control the process:
-    ```javascript
+  
+  ```javascript
       import { spawn } from 'node:child_process';
       const shellProcess = spawn('sh', []);
       shellProcess.stdin.write('echo "Hello, World!"\n');
       // Control the process as needed
-    ```
+  ```
 
   3. **NPM Support Only:** Currently, the project supports only NPM as a proof of concept. Expanding to support other package managers can be considered in the future.
 
