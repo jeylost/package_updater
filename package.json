@@ -1,0 +1,22 @@
+{
+  "name": "package_updater",
+  "version": "0.1.0",
+  "description": "Update version of a package and create a pull request with these changes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint *.js",
+    "lint:fix": "npx eslint *.js --fix"
+  },
+  "author": "Yevhenii Medviediev",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+# macOS-specific hidden files
+.DS_Store
+
+# Windows-specific hidden files
+Thumbs.db
+Desktop.ini
+
+# Visual Studio Code settings
+.vscode/
